@@ -1,4 +1,4 @@
-# GAL4EACL: Geospatially Grounded LLM Agents for Wildfire Resource Forecasting
+# GAL: Geospatially Grounded LLM Agents for Wildfire Resource Forecasting
 
 <div align="center">
 
@@ -25,9 +25,9 @@ Wildfire resource estimation is difficult for both pure statistical baselines an
 **Static feature pipelines**
 - Often pass raw features to the model without a stable intermediate representation, making outputs noisy and hard to audit over time.
 
-GAL4EACL addresses these issues by converting multi-source geospatial evidence into a compact, fixed-field perception layer that LLMs can reason over consistently.
+GAL addresses these issues by converting multi-source geospatial evidence into a compact, fixed-field perception layer that LLMs can reason over consistently.
 
-## GAL4EACL Framework
+## GAL Framework
 
 ![GAL4EACL framework](assets/wildfire_framework.png)
 
