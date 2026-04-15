@@ -173,12 +173,6 @@ python final-cut/rag_corpus_builder.py --build-trend
 python final-cut/build_trend_rag_index.py
 ```
 
-### Smoke-test the single-day analyzer
-
-```bash
-python final-cut/analysis.py
-```
-
 `analysis.py` currently contains a hard-coded example fire/date pair for quick inspection and JSON export.
 
 ## Data Prerequisites
@@ -195,21 +189,6 @@ The pipeline expects:
 - weather rasters in the configured `WEATHER_TABLES`
 - cleaned daily ground-truth CSV files under `final_data_cleaned/`
 
-Expected project-level layout:
-
-```text
-GAL4EACL-main/
-|-- final-cut/
-|-- final_data_cleaned/
-|   |-- LNU_LIGHTNING_COMPLEX_gt.csv
-|   |-- SCU_LIGHTNING_COMPLEX_gt.csv
-|   `-- ...
-|-- rag_data/
-`-- runs/
-```
-
-If you plan to make this repository public, keep the large rasters, database dumps, generated results, and API keys out of version control.
-
 ## Outputs
 
 A typical pipeline run writes:
@@ -220,14 +199,6 @@ A typical pipeline run writes:
 - per-day prompt / response logs for auditability
 - `rag_data/rag_index.npz` and `rag_data/rag_meta.json`: standard RAG index
 - `rag_data/rag_trend_index.npz` and `rag_data/rag_trend_meta.json`: trend RAG index
-
-## Open-Source Release Notes
-
-Before a public release, you may still want to:
-
-- add one or two figures under `assets/` and replace the image placeholders above
-- document how the PostGIS tables are prepared, if redistribution is permitted
-- replace the citation template below with the final paper metadata
 
 ## Citation
 
