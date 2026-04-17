@@ -6,7 +6,7 @@
 
 </div>
 
-> GAL4EACL equips LLM agents with a Geospatial Awareness Layer (GAL) that grounds wildfire decisions in structured Earth data.
+> GAL equips LLM agents with a Geospatial Awareness Layer (GAL) that grounds wildfire decisions in structured Earth data.
 >
 > Starting from daily hotspot detections and timestamps, the system retrieves infrastructure, demographic, terrain, and weather evidence from a spatial database, compresses them into a unit-locked perception script, and asks an LLM to estimate today's `daily_personnel` and `daily_budget`.
 >
