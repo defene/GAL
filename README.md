@@ -29,7 +29,7 @@ GAL addresses these issues by converting multi-source geospatial evidence into a
 
 ## GAL Framework
 
-![GAL4EACL framework](assets/wildfire_framework.png)
+![GAL4EACL framework](assets/wildfire_framework6.png)
 
 ### Core Components
 
